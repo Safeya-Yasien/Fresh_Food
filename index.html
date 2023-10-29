@@ -11,6 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Macondo&family=Merienda:wght@300&family=Merriweather&family=Oswald:wght@300&family=Work+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- normalize file -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- main css file -->
@@ -21,8 +29,11 @@
     <!-- header -->
     <header>
       <div class="container">
-        <img class="logo" src="images/logo.png" alt="logo" />
+        <a href="#" class="logo">
+          <img src ="images/logo.png" alt="logo" />
+        </a>
         <div class="nav">
+          <i class="fas fa-bars toggle-menu"></i>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -31,11 +42,11 @@
             <li><a href="#review">Review</a></li>
             <li><a href="#order">Order</a></li>
           </ul>
-        </div>
-        <div class="icons">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
         </div>
       </div>
     </header>
@@ -43,13 +54,613 @@
     <div class="home">
       <div class="container">
         <div class="info">
-          <h2></h2>
-          <p></p>
+          <h2>Get Fresh <span>Food</span> in a Easy Way</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+            reiciendis quaerat nobis deleniti amet non inventore. Reprehenderit
+            recusandae voluptatibus minus tenetur itaque numquam cum quos
+            dolorem maxime. Quas, quaerat nisi. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Cumque facilis, quaerat cupiditate
+            nulla quibusdam quo sunt esse tempore inventore vel voluptate, amet
+            laudantium adipisci veniam nihil quam molestiae omnis mollitia.
+          </p>
         </div>
-        <div class="img">
+        <div class="image">
           <img src="images/main_img.png" />
+        </div>
+        <button class="order-now arrow">
+          Order Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- about -->
+    <div class="about">
+      <div class="content">
+        <div class="image">
+          <img src="images/Food-Plate.png" alt="Food-Plate" />
+        </div>
+        <div class="info">
+          <h2><span>About </span>Us</h2>
+          <h3>Why choose us?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
+            est. Doloremque sapiente veritatis laboriosam corrupti optio et
+            maxime. Ad, amet explicabo eaque labore cupiditate quasi nostrum
+            nemo recusandae id quibusdam? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Doloremque ab, dolores pariatur cum
+            exercitationem, illo nisi veritatis vitae ea deleniti fugiat
+            quisquam tempora, accusantium corrupti excepturi optio. Inventore,
+            cupiditate recusandae.
+          </p>
+        </div>
+        <button class="order-now back-change">Order Now</button>
+      </div>
+    </div>
+    <!-- menu -->
+    <div class="menu">
+      <h2>our <span>Menu</span></h2>
+      <div class="container">
+        <div class="box">
+          <img src="images/buger.jpg" alt="burger" />
+          <div class="info">
+            <h3>Burger</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/pasta.jpg" alt="pasta" />
+          <div class="info">
+            <h3>Pasta</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/lasagna.webp" alt="lasagna" />
+          <div class="info">
+            <h3>Lasagna</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/chocolate_Drink.jpg" alt="chocolate_Drink" />
+          <div class="info">
+            <h3>Drink</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/pizza.jpg" alt="pizza" />
+          <div class="info">
+            <h3>Pizza</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/Hot_dog.jpg" alt="Hot_dog" />
+          <div class="info">
+            <h3>Hot Dog</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/juse.jpg" alt="juse" />
+          <div class="info">
+            <h3>Juice</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/biryani.webp" alt="biryani" />
+          <div class="info">
+            <h3>Biryani</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/chocolate.jpg" alt="chocolate" />
+          <div class="info">
+            <h3>Chocolate</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/ice_cream.jpg" alt="ice_cream" />
+          <div class="info">
+            <h3>Ice Cream</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/Spanchi.jpg" alt="Spanchi" />
+          <div class="info">
+            <h3>Spanchi</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/sandwich.jpg" alt="sandwich" />
+          <div class="info">
+            <h3>Sandwich</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              assumenda voluptates
+            </p>
+            <p>$20.00</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <button class="order-now order-menu">Order Now</button>
+          </div>
         </div>
       </div>
     </div>
+    <!-- gallary -->
+    <div class="gallary">
+      <h2>Our <span>Gallary</span></h2>
+      <div class="container">
+        <div class="box">
+          <div class="image">
+            <img src="images/gallary_1.jpg" alt="gallary_1" />
+          </div>
+          <div class="info">
+            <h3>Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              sint eveniet laboriosam
+            </p>
+            <button>Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallary_2.jpg" alt="gallary_2" />
+          </div>
+          <div class="info">
+            <h3>Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              sint eveniet laboriosam
+            </p>
+            <button>Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallary_3.jpg" alt="gallary_3" />
+          </div>
+          <div class="info">
+            <h3>Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              sint eveniet laboriosam
+            </p>
+            <button>Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallary_4.jpg" alt="gallary_4" />
+          </div>
+          <div class="info">
+            <h3>Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              sint eveniet laboriosam
+            </p>
+            <button>Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallary_5.jpg" alt="gallary_5" />
+          </div>
+          <div class="info">
+            <h3>Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              sint eveniet laboriosam
+            </p>
+            <button>Order Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/gallary_6.jpg" alt="gallary_6" />
+          </div>
+          <div class="info">
+            <h3>Food</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              sint eveniet laboriosam
+            </p>
+            <button>Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- review -->
+    <div class="review">
+      <h2>Customer <span>Reviews</span></h2>
+      <div class="container">
+        <div class="box">
+          <div class="image">
+            <img src="images/review_1.png" alt="review_1" />
+            <h3>John Deo</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus quam facere blanditiis in fugiat tempore
+              necessitatibus aliquid. Id adipisci, rem corrupti asperiores
+              distinctio delectus quae quia tenetur totam laboriosam quam. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Dolores soluta
+              ullam ipsa voluptates repudiandae dignissimos deleniti mollitia
+              eum. Laudantium placeat velit nemo illo pariatur. Fuga aperiam
+              impedit illo atque repellendus!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/review_2.png" alt="review_2" />
+            <h3>John Deo</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus quam facere blanditiis in fugiat tempore
+              necessitatibus aliquid. Id adipisci, rem corrupti asperiores
+              distinctio delectus quae quia tenetur totam laboriosam quam. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Dolores soluta
+              ullam ipsa voluptates repudiandae dignissimos deleniti mollitia
+              eum. Laudantium placeat velit nemo illo pariatur. Fuga aperiam
+              impedit illo atque repellendus!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/review_3.png" alt="review_3" />
+            <h3>John Deo</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus quam facere blanditiis in fugiat tempore
+              necessitatibus aliquid. Id adipisci, rem corrupti asperiores
+              distinctio delectus quae quia tenetur totam laboriosam quam. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Dolores soluta
+              ullam ipsa voluptates repudiandae dignissimos deleniti mollitia
+              eum. Laudantium placeat velit nemo illo pariatur. Fuga aperiam
+              impedit illo atque repellendus!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/review_4.png" alt="review_4" />
+            <h3>John Deo</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus quam facere blanditiis in fugiat tempore
+              necessitatibus aliquid. Id adipisci, rem corrupti asperiores
+              distinctio delectus quae quia tenetur totam laboriosam quam. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Dolores soluta
+              ullam ipsa voluptates repudiandae dignissimos deleniti mollitia
+              eum. Laudantium placeat velit nemo illo pariatur. Fuga aperiam
+              impedit illo atque repellendus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ordering -->
+    <div class="ordering">
+      <h2><span>Order</span> Now</h2>
+      <div class="container">
+        <div class="image">
+          <img src="images/order_image.png" alt="order_image" />
+        </div>
+        <div class="form">
+          <form action="">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your Name" />
+            <label>Number</label>
+            <input type="text" name="Number" placeholder="Your Number" />
+            <label>Your Order</label>
+            <input type="text" name="order" placeholder="Food Name" />
+          </form>
+          <form action="">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Your Email" />
+            <label>How Much</label>
+            <input type="number" name="Number" placeholder="How Many Order" />
+            <label>Address</label>
+            <input type="text" name="Number" placeholder="Your Address" />
+            <button>Order Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- team -->
+    <div class="team">
+      <h2>Our<span>Team</span></h2>
+      <div class="container">
+        <div class="box">
+          <img src="images/chef1.png" alt="chef1" />
+          <div class="info">
+            <h3>Chef</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/chef2.png" alt="chef2" />
+          <div class="info">
+            <h3>Chef</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/chef3.jpg" alt="chef3" />
+          <div class="info">
+            <h3>Chef</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/chef4.jpg" al="chef4" />
+          <div class="info">
+            <h3>Chef</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="box">
+          <h2>Location</h2>
+          <ul>
+            <li><a href="#">Sri Lanka</a></li>
+            <li><a href="#">USA</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">Japan</a></li>
+            <li><a href="#">Italy</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Quick Link</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="#">Order</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="#">+94 12 3456 789</a></li>
+            <li><a href="#">+94 25 5568456</a></li>
+            <li><a href="#">johndeo123@gmail.com</a></li>
+            <li><a href="#">foodshop123@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Our Service</h2>
+          <ul>
+            <li><a href="#">Fast Delivery </a></li>
+            <li><a href="#">Easy Payments</a></li>
+            <li><a href="#">24 x 7 Service</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Follows</h2>
+          <ul class="social">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
