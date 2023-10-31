@@ -232,7 +232,13 @@ header .icons i:hover {
 }
 
 .home .image img {
-  max-width: 100%;
+  width: 500px;
+}
+
+@media (max-width: 767px) {
+  .home .image img {
+    width: 400px;
+  }
 }
 
 .home button.order-now {
@@ -247,7 +253,7 @@ header .icons i:hover {
 
 .home button.arrow {
   position: absolute;
-  bottom: 50px;
+  bottom: 0px;
 }
 
 @media (max-width: 767px) {
@@ -285,7 +291,13 @@ header .icons i:hover {
 }
 
 .about .image img {
-  max-width: 100%;
+  width: 500px;
+}
+
+@media (max-width: 767px) {
+  .home .image img {
+    width: 400px;
+  }
 }
 
 .about .info {
@@ -321,7 +333,7 @@ header .icons i:hover {
 
 .about button.back-change {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
 }
