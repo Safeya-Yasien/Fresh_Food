@@ -237,7 +237,7 @@ header .icons i:hover {
 
 @media (max-width: 767px) {
   .home .image img {
-    width: 400px;
+    width: 100%;
   }
 }
 
@@ -295,8 +295,8 @@ header .icons i:hover {
 }
 
 @media (max-width: 767px) {
-  .home .image img {
-    width: 400px;
+  .about .image img {
+    width: 100%;
   }
 }
 
